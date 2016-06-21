@@ -15,14 +15,18 @@ namespace high5
 	Dice::Dice(DiceType d_type) : type(d_type){
 	}
 
-	// throw dice and get the value of Dice: 1 ~ 6
+	// throw dice and get the value of Dice
 	int Dice::throwDice(){
 		int r = (rand() % 6) + 1;
+		// base on different type of dice return different value
 		switch (type){
+		// Type 1 dice : x 1
 		case DiceType::signle:
 			return r;
+    		// Type 2 dice : x 3
 		case DiceType::triple:
 			return r * 3;
+		// Type 3 dice : x 5
 		case DiceType::quintuple:
 			return  r * 5;
 		default:

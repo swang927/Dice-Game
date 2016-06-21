@@ -1,21 +1,23 @@
+/*  test_game.h
+ *  Author: Shaokang Wang
+ *  6/21/2016
+*/
+
 #include <gtest/gtest.h>
 #include "game.h"
 
 
+using namespace high5;
+
 class TestGame : public ::testing::Test{
-  private:
-
-
   public:
-  	TestGame();
-  	~TestGame();
-
-  	void SetUp();
-  	void TearDown();
+      Dice my_game;
 
 
+      TestGame();
+      ~TestGame();
+
+      void SetUp();
+      void TearDown();
 };
 
-TEST_F( TestGame, something ){
-	EXPECT_EQ( 1, 1 );
-}
