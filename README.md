@@ -5,11 +5,11 @@ by Shaokang Wang   6/22/2016
   I use CMAKE file to auto generate make file.
   
 ## Componenet:
-   *Drive.cpp :: contain main function to run game loop.*
+   *drive.cpp :: contain main function to run game loop.*
    
-   *Game.cpp/h :: contain main logic to simulate dice game.*
+   *game.cpp/h :: contain main logic to simulate dice game.*
    
-   *Dice.cpp/h :: represent the dice object in dice game.*
+   *dice.cpp/h :: represent the dice object in dice game.*
    
   
 ## How to play:
