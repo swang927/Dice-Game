@@ -14,7 +14,7 @@ by Shaokang Wang   6/22/2016
   
 ## How to play:
   Game will only run one round each time.
-  To start another round, press "Enter" key on stander keyboard.
+  To start another round, press "Enter" key on standard keyboard.
   
   
 ###### Enjoy it >_<
