@@ -124,4 +124,39 @@ void Game::setPrime(std::set<int> prime_list){
 	prime = prime_list;
 }
 
+
+// get table 
+std::vector<int> Game::getTable(){
+	return table;
+}
+
+// get number of single dice left in bag 
+int Game::getSingledice(){
+	return single_dice;
+}
+
+// get number of triple dice left in bag
+int Game::getTripledice(){
+	return triple_dice;
+}
+
+// get number of quintuple dice left in bag 
+int Game::getQuintupledice(){
+	return quintuple_dice;
+}
+
+// get win amount for one round
+int Game::getWinamount(){
+	return win_amount;
+}
+
+// get total win amount so far 
+unsigned long Game::getTotalwin(){
+	return running_total_win;
+}
+
+// get total bet amount so far 
+unsigned long Game::getTotalbet(){
+	return running_total_bet;
+}
 }

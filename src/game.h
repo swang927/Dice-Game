@@ -65,6 +65,28 @@ class Game{
 	  // Accessor:
 	  // set prime number checklist
 	  void setPrime(std::set<int> prime_list);
+     
+	  // get table 
+	  std::vector<int> getTable();
+
+  	  // get number of single dice left in bag 
+	  int getSingledice();
+
+          // get number of triple dice left in bag
+	  int getTripledice();
+
+ 	  // get number of quintuple dice left in bag 
+	  int getQuintupledice();
+
+ 	  // get win amount for one round
+	  int getWinamount();
+
+ 	  // get total win amount so far 
+	  unsigned long getTotalwin();
+
+ 	  // get total bet amount so far 
+	  unsigned long getTotalbet();
+
 };
 }
 
