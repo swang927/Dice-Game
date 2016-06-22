@@ -11,8 +11,9 @@ using namespace high5;
 
 class TestGame : public ::testing::Test{
   public:
-      Dice my_game;
-
+      Game my_game;
+      std::set<int> myset;
+      
 
       TestGame();
       ~TestGame();
