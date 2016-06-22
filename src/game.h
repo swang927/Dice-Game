@@ -16,76 +16,86 @@ namespace high5
 // class to simulate the dice game
 class Game{
   private:
-	  /*  record prime numbers in range (1~108) to check
-	   *  if the sum is a prime number, the game ends and 
-	   *  the prime number is the prize. 
-	   */
-	  std::set<int> prime;
-	  // record the value of dices on table
-	  std::vector<int> table;
-	  
-	  // record the number of type 1 dice left in bag
-	  int single_dice;
-	  // record the number of type 2 dice left in bag
-	  int triple_dice;
-	  // record the number of type 3 deic left in bag
-	  int quintuple_dice;
+    /*  record prime numbers in range (1~108) to check
+     *  if the sum is a prime number, the game ends and 
+     *  the prime number is the prize. 
+     */
+    std::set<int> prime;
+    // record the value of dices on table
+    std::vector<int> table;
+    
+	
+    // record the number of type 1 dice left in bag
+    int single_dice;
+    // record the number of type 2 dice left in bag
+    int triple_dice;
+    // record the number of type 3 deic left in bag
+    int quintuple_dice;
 
-	  // record the win amount for one round
-	  int win_amount;
-	  // record the total win amount for all rounds so far
-	  unsigned long running_total_win;
-	  // record the total bet amount for all rounds so far
-	  unsigned long running_total_bet;
+	
+    // record the win amount for one round
+    int win_amount;
+    // record the total win amount for all rounds so far
+    unsigned long running_total_win;
+    // record the total bet amount for all rounds so far
+    unsigned long running_total_bet;
 
-	  // random take a dice from the bag
-	  Dice takeDice();
+	
+    // random take a dice from the bag
+    Dice takeDice();
 
+	
   public:
-	  // default constructor
-	  Game();
-	  // constructor
-	  Game(std::set<int> prime_set);
+    // default constructor
+    Game();
+    // constructor
+    Game(std::set<int> prime_set);
 
-	  // print game title
-	  void printTitle();
-	  
-	  // show result : one round of the game
-      void displayGame();
+	
+	
+	
+    // print game title
+    void printTitle();
+    
+    // show result : one round of the game
+    void displayGame();
 
-	  // wait user input : press "Enter" key to start next round 
-	  void getKeyboardInput();
+    // wait user input : press "Enter" key to start next round 
+    void getKeyboardInput();
 
-	  // set up the game
-	  void setupGame();
+    // set up the game
+    void setupGame();
 
-	  // playe the game 
-	  void simulateGame();
+    // playe the game 
+    void simulateGame();
 
-	  // Accessor:
-	  // set prime number checklist
-	  void setPrime(std::set<int> prime_list);
+
+
+	
+    // Accessor:
+    // set prime number checklist
+    void setPrime(std::set<int> prime_list);
      
-	  // get table 
-	  std::vector<int> getTable();
+    // get table 
+    std::vector<int> getTable();
 
-  	  // get number of single dice left in bag 
-	  int getSingledice();
+    // get number of single dice left in bag 
+    int getSingledice();
 
-          // get number of triple dice left in bag
-	  int getTripledice();
+    // get number of triple dice left in bag
+    int getTripledice();
 
- 	  // get number of quintuple dice left in bag 
-	  int getQuintupledice();
+    // get number of quintuple dice left in bag 
+    int getQuintupledice();
 
- 	  // get win amount for one round
-	  int getWinamount();
+    // get win amount for one round
+    int getWinamount();
 
- 	  // get total win amount so far 
-	  unsigned long getTotalwin();
+    // get total win amount so far 
+    unsigned long getTotalwin();
 
- 	  // get total bet amount so far 
-	  unsigned long getTotalbet();
+    // get total bet amount so far 
+    unsigned long getTotalbet();
 
 };
 }

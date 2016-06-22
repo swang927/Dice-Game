@@ -6,7 +6,7 @@
 #include <gtest/gtest.h>
 #include "game.h"
 
-
+    
 using namespace high5;
 
 class TestGame : public ::testing::Test{

@@ -2,7 +2,7 @@
  *  Author: Shaokang Wang
  *  6/21/2016
 */
-
+    
 #include "test_dice.h"
 
 // my gtest class
@@ -24,7 +24,7 @@ TEST_F( TestDice, test_throwDice_function_for_Type_1_Dice){
     // type 1 dice possible result [1, 2, 3, 4, 5, 6] 
     mydice = Dice(DiceType::signle);
     for(int i = 0; i < 100; ++i){
-    	EXPECT_TRUE(myset.find(mydice.throwDice()) != myset.end());
+        EXPECT_TRUE(myset.find(mydice.throwDice()) != myset.end());
     }
    
 }
@@ -34,7 +34,7 @@ TEST_F( TestDice, test_throwDice_function_for_Type_2_Dice){
     // type 2 dice possible result [3, 6, 9, 12, 15, 18] 
     mydice = Dice(DiceType::triple);
     for(int i = 0; i < 100; ++i){
-    	EXPECT_TRUE(myset.find(mydice.throwDice() / 3) != myset.end());
+        EXPECT_TRUE(myset.find(mydice.throwDice() / 3) != myset.end());
         EXPECT_EQ(0, mydice.throwDice() % 3);
     }
    
@@ -46,7 +46,7 @@ TEST_F( TestDice, test_throwDice_function_for_Type_3_Dice){
     // type 3 dice possible result [5, 10, 15, 20, 25, 30] 
     mydice = Dice(DiceType::quintuple);
     for(int i = 0; i < 100; ++i){
-    	EXPECT_TRUE(myset.find(mydice.throwDice() / 5) != myset.end());
+        EXPECT_TRUE(myset.find(mydice.throwDice() / 5) != myset.end());
         EXPECT_EQ(0, mydice.throwDice() % 5);
     }
    

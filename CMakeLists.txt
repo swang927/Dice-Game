@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 2.6)
 
-
+    
 # Variables
 set(PROJECT_NAME DiceGame)
 set(PROJECT_TEST ${PROJECT_NAME}Test)

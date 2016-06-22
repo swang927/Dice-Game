@@ -12,12 +12,12 @@ using namespace high5;
 class TestDice : public ::testing::Test{ 
   public:
         Dice mydice;
-	std::set<int> myset;
+    std::set<int> myset;
 
-  	TestDice();
-  	~TestDice();
+    TestDice();
+    ~TestDice();
 
-  	void SetUp();
-  	void TearDown();
+    void SetUp();
+    void TearDown();
 };
 

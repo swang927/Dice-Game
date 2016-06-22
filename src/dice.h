@@ -1,4 +1,4 @@
-/*  dice.cpp
+/*  dice.h
  *  Author: Shaokang Wang
  *  6/21/2016
 */
@@ -15,28 +15,32 @@ namespace high5
 
 // 3 type of dices
 enum class DiceType{
-	signle,   // x1
-	triple,   // x3
-	quintuple // x5 
+    signle,   // x1
+    triple,   // x3
+    quintuple // x5 
 };
 
 
 class Dice {
   private:
-	  // record current dice type
-      DiceType type;
+    // record current dice type
+    DiceType type;
 
   public:
-      // default constructor
-	  Dice();
-	  // constructor
-	  Dice(DiceType dice_typy);
+    // default constructor
+    Dice();
+    // constructor
+    Dice(DiceType dice_typy);
 
-	  // throw dice
-	  int throwDice();
+	
+	// Utility funtions:
+    // throw dice
+    int throwDice();
 
-	  // get type of the Dice
-	  DiceType getType() const;
+	
+	// Accessor:
+    // get type of the Dice
+    DiceType getType() const;
 };
 
 }
